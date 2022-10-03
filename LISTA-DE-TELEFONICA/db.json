@@ -1,33 +1,39 @@
 {
-  "compras": [
+  "telefones": [
     {
       "id": 1,
-      "item": "Felipe",
-      "quantidade": ""
+      "nome": "Felipe",
+      "numero": "9834-1288",
+      "cidade": "Fortaleza"
     },
     {
       "id": 2,
-      "item": "Luiza",
-      "quantidade": ""
+      "nome": "Luiza",
+      "numero": "97746-7777",
+      "cidade": "Piaui"
     },
     {
       "id": 3,
-      "item": "Léo",
-      "quantidade": ""
+      "nome": "Luiz",
+      "numero": "9066-6476",
+      "cidade": "Rio de janeiro"
     },
     {
       "id": 4,
-      "item": "Daniel",
-      "quantidade": ""
+      "nome": "Daniel",
+      "numero": "9885-5347",
+      "cidade": "Joao"
     },
     {
-      "id": 5,
-      "item": "Ramon",
-      "quantidade": ""
+      "nome": "Manu",
+      "numero": "9864-8368",
+      "cidade": "Paraiba",
+      "id": 6
     },
     {
-      "item": "José",
-      "quantidade": "",
+      "nome": "Gulherme",
+      "numero": 988887766,
+      "cidade": "Sao Paulo",
       "id": 7
     }
   ]
