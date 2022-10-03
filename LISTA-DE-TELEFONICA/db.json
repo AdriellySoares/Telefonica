@@ -2,32 +2,32 @@
   "compras": [
     {
       "id": 1,
-      "item": "Feijão",
-      "quantidade": "3333"
+      "item": "Felipe",
+      "quantidade": ""
     },
     {
       "id": 2,
-      "item": "Mostarda",
-      "quantidade": "4444"
+      "item": "Luiza",
+      "quantidade": ""
     },
     {
       "id": 3,
-      "item": "Arroz",
-      "quantidade": 4
+      "item": "Léo",
+      "quantidade": ""
     },
     {
       "id": 4,
-      "item": "Açucar",
-      "quantidade": 4
+      "item": "Daniel",
+      "quantidade": ""
     },
     {
       "id": 5,
-      "item": "Leite",
-      "quantidade": 4
+      "item": "Ramon",
+      "quantidade": ""
     },
     {
-      "item": "cacau",
-      "quantidade": 1,
+      "item": "José",
+      "quantidade": "",
       "id": 7
     }
   ]

@@ -10,24 +10,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-
 <body class="conteiner">
     <h1 class="mt-5">Lista Telefonica</h1>
     <hr>
-
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Novo item
-  </button>
+    <div class="row">
+      <div class="col">
+        <input id="input_busca" onkeyup="filtrar()" type="text" class="form-control" placeholder="buscar">
+    </div>
 
-
+    <div class="col text-end">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Novo Contato
+        </button>
+      </div>
+    </div>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th></th>
-                <th></th>
+                <th> <input onclick="marcarTodos()" type="checkbox"> </th>
+                <th>IDS</th>
+                <th>Nomes</th>
+                <th>Numeros</th>
                 <th></th>
             </tr>
         </thead>
@@ -40,14 +44,14 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="nome_item">Novo item</h5>
+          <h5 class="modal-title" id="nome_contato">Novo Contato</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form onsubmit="inserir()" id="form_add">
         <div class="modal-body">
 
-          <input class="form-control form-control-lg mb-3" id="input_item" placeholder="nome item">
-          <input type="number" class="form-control form-control-lg mb-3" id="input_quantidade" placeholder="nome quantidade">
+          <input class="form-control form-control-lg mb-3" id="input_nome" placeholder="nome">
+          <input type="number" class="form-control form-control-lg mb-3" id="input_numero" placeholder="nome numero">
 
         </div>
         <div class="modal-footer">
@@ -65,7 +69,7 @@
 
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEditar" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Editar item</h5>
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Editar Contato</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
@@ -96,6 +100,7 @@
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="eventos.js"></script>
+    <script src="filtrar.js"></script>
 
 </body>
 
