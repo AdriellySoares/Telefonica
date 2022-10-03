@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:777'
+const API_URL = 'http://localhost:8500'
 
 function inserir(){
     event.preventDefault();
@@ -7,7 +7,7 @@ function inserir(){
         numero: parseInt(input_numero.value),
         cidade: input_cidade.value,
     };
-    fetch(API_URL+ '/telefones', {
+    fetch(API_URL+'/telefones', {
        method: 'POST',
        body: JSON.stringify(dados),
        headers: {
@@ -81,7 +81,7 @@ function atualizarlista(){
 }
 
 async function excluir(id){
-    let resposta = confirm('Exclui não má, mas se tu quiser arrocha ai, tem certeza?')
+    let resposta = confirm('tem certeza?')
         if(resposta !==true){
             return;
         }

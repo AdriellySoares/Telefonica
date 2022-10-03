@@ -23,18 +23,6 @@
       "nome": "Daniel",
       "numero": "9885-5347",
       "cidade": "Joao"
-    },
-    {
-      "nome": "Manu",
-      "numero": "9864-8368",
-      "cidade": "Paraiba",
-      "id": 6
-    },
-    {
-      "nome": "Gulherme",
-      "numero": 988887766,
-      "cidade": "Sao Paulo",
-      "id": 7
     }
   ]
 }
